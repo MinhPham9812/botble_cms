@@ -1,0 +1,223 @@
+#news-detail{
+    background-image: url('/assets/images/background2.svg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center ;
+    z-index: -1; /* Đảm bảo background không che nội dung */ 
+}
+
+
+.slider-news-detail .title-news .image-content img{
+    height: 803px;
+    margin-top: 80px;
+}
+
+/* Title-News */
+
+.slider-news-detail .title-news{
+    position: relative;
+    background-image: url(/assets/images/image_content.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 50%;
+}
+
+/* khung tiêu đề */
+.slider-news-detail .title-content{
+    width: 57%; 
+    height: 24%; 
+    background-color: var(--primary);
+    border-radius: 60px;
+    color: #fff;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.slider-news-detail .metadata{
+    display: flex;
+    align-items: center;
+    margin: 3% 8% 0 ;
+    gap: 16px;
+}
+
+.slider-news-detail .metadata p:last-child{
+    margin-left: auto;
+}
+
+.title-content p {
+    font-family: 'Barlow';
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 21px;
+    text-align: justify;
+    padding: 0;
+}
+
+/* Tiêu đề */
+.title-content .title {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Barlow';
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* end Title-News */
+
+/* Text */
+.text{
+    margin: 7% auto 0px;
+    width: 58%;
+    height: auto;
+}
+.slider-news-detail #content .text-content-1 {
+    margin-top: 20px;
+    font-size: 18px; /* Kích thước chữ vừa phải */
+    font-weight: 400;
+    line-height: 26px; /* Khoảng cách giữa các dòng */
+    color: black; /* Màu chữ đậm để dễ đọc */
+    text-align: justify;
+
+}
+
+/* Khoảng cách giữa các đoạn văn */
+.slider-news-detail #content .text-content-1 p {
+    margin-bottom: 20px; /* Tạo khoảng cách giữa các đoạn văn */
+}
+
+/* hình ảnh giới thiệu */
+.slider-news-detail #content .describe-img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    gap: 20px;
+}
+
+
+.slider-news-detail #content .describe-img img{
+    border-radius: 10%;
+     width: 48%;
+}
+
+/* end Text */
+
+/* Social Icons */
+.slider-news-detail .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 28px; /* Khoảng cách giữa các nút */
+    margin-top: 50px;
+    margin-left: 21%;
+}
+
+.slider-news-detail .social-icon {
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    background-color: var(--primary); /* Màu nền của nút */
+    border-radius: 50%; /* Làm tròn nút */
+    color: white; /* Màu của icon */
+    text-align: center;
+    line-height: calc(5vw - 6px); /* Đảm bảo icon căn giữa */
+    font-size: 2vw; /* Kích thước icon */
+    transition: 0.2s ease;
+}
+
+.slider-news-detail .social-icon:hover {
+    background-color: #3e8e41; /* Màu nền khi hover */
+}
+/* end Social Icons */
+
+
+/* Break Line */
+.slider-news-detail .break-line{
+    width: 76%;
+    margin: 60px auto 0;
+    border-bottom: 1px solid var(--primary);
+}
+/* end Break Line */
+
+.slider-news-detail .related-articles {
+    width: 60%; /* Căn chỉnh chiều rộng cho phần bài viết */
+    margin: 50px auto; /* Căn giữa phần bài viết và tạo khoảng cách trên dưới */
+}
+
+.slider-news-detail .related-articles h3 {
+    font-size: 20px; /* Kích thước chữ cho tiêu đề */
+    color: var(--primary); /* Màu tiêu đề */
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase; /* Viết hoa tiêu đề */
+    text-align: left; /* Căn tiêu đề bên trái */
+}
+
+.slider-news-detail .related-articles ul {
+    list-style: none; /* Xóa dấu chấm đầu dòng của danh sách */
+    padding: 0;
+}
+
+.slider-news-detail .related-articles ul li {
+    position: relative; /* Định vị tương đối để chèn biểu tượng */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    padding-left: 20px; /* Tạo khoảng cách cho biểu tượng ở phía trước */
+}
+
+.slider-news-detail .related-articles ul li::before {
+    content: '\2022'; /* Biểu tượng hình tròn (•) */
+    color: #1F7A56;
+    font-size: 50px; /* Kích thước của biểu tượng */
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+
+.slider-news-detail .related-articles ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1B332E; /* Màu của văn bản */
+    text-decoration: none; /* Xóa gạch chân mặc định của liên kết */
+    line-height: 26px; /* Khoảng cách dòng */
+}
+
+/* responsive */
+@media (max-width: 1108px) {
+    .slider-news-detail .title-news{
+        background-image: none;
+        min-height: 127px;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .slider-news-detail .title-content{
+        position: relative;
+        width: 100%; 
+        height: 127px;
+        background-color: var(--primary);
+        border-radius: 60px;
+        color: #fff;
+    }
+
+    .slider-news-detail .title{
+        width: 60%;
+    }
+    
+}
+
+@media (max-width: 470px) {
+    
+    
+}
+
+
